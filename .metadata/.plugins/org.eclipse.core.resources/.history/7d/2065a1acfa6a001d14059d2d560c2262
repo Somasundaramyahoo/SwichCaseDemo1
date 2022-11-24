@@ -1,0 +1,30 @@
+package examples;
+
+public class NameLengthException {
+	public static void main(String[] args)throws NameException {
+		String name="somu";
+		System.out.println("Start");
+		try{
+			if(name.length()<5){
+				throw new NameException("error occurs");
+			}
+			else{
+				System.out.println(name);
+			}
+		}
+		catch(NameException e){
+			//System.out.println(e);
+			e.printStackTrace();
+		}
+		System.out.println("end");
+	}
+
+}
+class NameException extends Exception{
+	public NameException(String a){
+		super (a);
+	}
+	public void printStackTrace(){
+		System.out.println("Error Occurs");
+	}
+}

@@ -1,0 +1,19 @@
+package examples;
+
+public class NumberFormateDemo {
+	public static void main(String[] args) {
+		String a="24b";
+		System.out.println("start");
+		try{
+		System.out.println(Integer.parseInt(a));
+		}
+		catch(Exception e){
+			//System.out.println(e);
+			//System.out.println("error occure");
+			e.printStackTrace();
+		}
+		System.out.println("end");
+		
+	}
+
+}

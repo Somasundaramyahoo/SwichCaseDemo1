@@ -1,0 +1,21 @@
+package examples;
+
+public class Hierarchy {
+	public static void main(String[] args) {
+		String a="Hello";
+		try{
+			System.out.println(a.charAt(7));
+		}
+		catch(StringIndexOutOfBoundsException se){
+			se.printStackTrace();
+		}
+		catch(IndexOutOfBoundsException ie){
+			ie.printStackTrace();
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+		System.out.println("end ");
+	}
+
+}

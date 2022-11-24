@@ -1,0 +1,28 @@
+package com.Examples;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.omg.Messaging.SyncScopeHelper;
+
+public class UseTeacher {
+	public static void main(String[] args) {
+
+		HashMap<Integer,Teacher>a=new HashMap<>();
+		
+		a.put(1,new Teacher("somu","b.e",23,60000,true));
+		a.put(2,new Teacher("sundaram","m.sc",27,58000,true));
+		a.put(3,new Teacher("ramya","m.a",24,55000,false));
+		a.put(4,new Teacher("ragul","m.ed",21,70000,true));
+		a.put(5,new Teacher("raji","m.ed",23,44000,false));
+		a.put(6,new Teacher("livya","b.sc",25,40000,false));
+		a.put(7,new Teacher("kowsik","m.a",26,11000,true));
+		
+		a.values().forEach(x -> System.out.println(x));
+		a.values().forEach(System.out::println);
+		//List<String>name=a.values().stream().map(x->x.getName()).collect(Collectors.toList());
+		//System.out.println(name);
+	}
+
+}

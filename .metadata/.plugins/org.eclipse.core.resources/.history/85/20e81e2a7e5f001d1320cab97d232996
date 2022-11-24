@@ -1,0 +1,14 @@
+package com.strings;
+
+public class StringDemo {
+public static void main(String[] args) {
+	 int num=Integer.parseInt(args[0]);
+	 int add=0;
+	 for(int i=1; i<num.length; i++){
+		 for(int j=1; j<num.length; j++){
+			 add=add+i;
+		 }
+	 }
+	 System.out.println(add);
+}
+}

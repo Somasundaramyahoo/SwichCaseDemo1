@@ -1,0 +1,20 @@
+package examples;
+
+public class CheckAge {
+	public static void main(String[] args) throws AgeException {
+		int age=16;
+		if(age<18){
+			throw new AgeException("not elligible");
+		}
+		else{
+			System.out.println("elligible");
+		}
+		
+		
+	}
+}
+public class AgeException extends Exception {
+	public AgeException (String a){
+		super(a);
+	}
+}
